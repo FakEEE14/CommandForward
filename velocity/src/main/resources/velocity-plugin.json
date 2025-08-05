@@ -1,8 +1,0 @@
-{
-    "id": "commandforward",
-    "name": "CommandForward",
-    "version": "${project.version}",
-    "authors": ["${author}"],
-    "dependencies": [],
-    "main": "${project.groupId}.${project.artifactId}.${project.name}"
-}

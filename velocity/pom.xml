@@ -24,6 +24,24 @@
         </repository>
     </repositories>
 
+    <build>
+        <plugins>
+            <!--need to define the plugin processor to generate velocity-plugin file-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <annotationProcessors>
+                        <annotationProcessor>
+                            com.velocitypowered.api.plugin.ap.PluginAnnotationProcessor
+                        </annotationProcessor>
+                    </annotationProcessors>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencies>
         <dependency>
             <groupId>com.velocitypowered</groupId>
